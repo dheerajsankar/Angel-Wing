@@ -1,0 +1,23 @@
+# ROS 2 / colcon build output
+/build/
+/install/
+/log/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# VS Code C/C++ browsing database
+/.vscode/browse.vc.db*
+
+# ROS bag and recorded data
+*.db3
+*.mcap
+/bags/
+
+# Local environment files
+.env
+.env.*

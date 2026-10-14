@@ -1,0 +1,29 @@
+{
+  "name": "Angel-Wing — ROS 2 Jazzy",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "dev",
+  "workspaceFolder": "/workspaces/Angel-Wing",
+  "shutdownAction": "stopCompose",
+  "overrideCommand": true,
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.defaultInterpreterPath": "/opt/angel-wing-venv/bin/python",
+        "cmake.configureOnOpen": false,
+        "files.watcherExclude": {
+          "**/build/**": true,
+          "**/install/**": true,
+          "**/log/**": true
+        }
+      }
+    }
+  }
+}

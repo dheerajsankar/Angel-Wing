@@ -1,0 +1,18 @@
+services:
+  dev:
+    image: angel-wing:dev
+    build:
+      context: .
+      args:
+        ROS_BUILD_JOBS: "${ROS_BUILD_JOBS:-2}"
+        EXTRA_APT_PACKAGES: "${EXTRA_APT_PACKAGES:-}"
+    working_dir: /workspaces/Angel-Wing
+    volumes:
+      - .:/workspaces/Angel-Wing
+    # Linux host networking permits ROS DDS discovery across the host/network.
+    network_mode: host
+    environment:
+      ROS_DOMAIN_ID: "${ROS_DOMAIN_ID:-0}"
+    stdin_open: true
+    tty: true
+    command: bash

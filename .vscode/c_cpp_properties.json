@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/dheeraj/px4_ros2_ws/install/px4_ros_com/include/**",
+        "/home/dheeraj/px4_ros2_ws/install/px4_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/dheeraj/Projects/Angel-Wing/src/aw_control/include/**",
+        "/home/dheeraj/Projects/Angel-Wing/src/aw_estimator/include/**",
+        "/home/dheeraj/Projects/Angel-Wing/src/aw_guidance/include/**",
+        "/home/dheeraj/Projects/Angel-Wing/src/aw_mission/include/**",
+        "/home/dheeraj/Projects/Angel-Wing/src/aw_safety/include/**",
+        "/home/dheeraj/Projects/Angel-Wing/src/aw_swarm/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
